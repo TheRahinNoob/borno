@@ -11,15 +11,15 @@ const motionViewport = {
 const philosophyItems = [
   {
     label: "Standard",
-    text: "Build interfaces that feel sharper, calmer, and more trustworthy.",
+    text: "Build products that feel clean, smooth, and easy to trust.",
   },
   {
     label: "Focus",
-    text: "Create digital products where aesthetics, usability, and implementation quality reinforce each other.",
+    text: "Make websites where design, usability, and code quality all work together.",
   },
   {
     label: "Direction",
-    text: "Move toward agency-level work that feels more intentional, more premium, and more professionally complete.",
+    text: "Keep growing toward high-level freelance and agency work that feels complete and well-crafted.",
   },
 ];
 
@@ -58,16 +58,16 @@ export default function AboutPreview() {
                   <div className="mb-4 flex items-center gap-3">
                     <span className="h-2.5 w-2.5 rounded-full bg-cyan-300 shadow-[0_0_14px_rgba(103,232,249,0.65)]" />
                     <span className="text-[10px] uppercase tracking-[0.22em] text-white/36">
-                      How I think
+                      How I work
                     </span>
                   </div>
 
                   <h2 className="max-w-[12ch] text-[2.25rem] font-semibold leading-[0.9] tracking-[-0.085em] text-white xs:text-[2.5rem]">
                     I care about
                     <span className="block text-white/72">more than just</span>
-                    <span className="block">building something</span>
+                    <span className="block">making something</span>
                     <span className="block bg-gradient-to-r from-white via-cyan-100 to-white/76 bg-clip-text text-transparent">
-                      that works.
+                      work.
                     </span>
                   </h2>
                 </div>
@@ -83,17 +83,16 @@ export default function AboutPreview() {
             >
               <div className="space-y-6">
                 <p className="max-w-[34ch] text-[14px] leading-8 text-white/68">
-                  I’m interested in building digital experiences that feel
-                  refined, modern, and visually convincing — not only in how
-                  they look, but in how they communicate, respond, and support
-                  real product goals.
+                  I like building digital products that feel modern, clear, and
+                  well put together. Not just in how they look, but in how they
+                  speak, respond, and support real goals.
                 </p>
 
                 <p className="max-w-[34ch] text-[14px] leading-8 text-white/68">
-                  My approach combines frontend discipline with stronger visual
-                  sensitivity: clearer hierarchy, more intentional spacing,
-                  better responsiveness, and the kind of detail that makes a
-                  website feel more credible and more premium.
+                  My approach mixes clean frontend work with a strong eye for
+                  detail — better hierarchy, better spacing, smoother
+                  responsiveness, and the small things that make a website feel
+                  more solid and more premium.
                 </p>
               </div>
 
@@ -118,9 +117,7 @@ export default function AboutPreview() {
                   <motion.div
                     key={item.label}
                     variants={{
-                      hidden: shouldReduceMotion
-                        ? {}
-                        : { opacity: 0, y: 18 },
+                      hidden: shouldReduceMotion ? {} : { opacity: 0, y: 18 },
                       show: { opacity: 1, y: 0 },
                     }}
                     transition={{ duration: 0.55, ease: "easeOut" }}
@@ -165,7 +162,7 @@ export default function AboutPreview() {
             <p className="section-eyebrow">About / Philosophy</p>
 
             <h2 className="mt-6 text-[2.15rem] font-semibold leading-[1] tracking-[-0.05em] text-white sm:text-[3rem] lg:text-[4rem]">
-              I care about more than just building something that works.
+              I care about more than just making something work.
             </h2>
           </motion.div>
 
@@ -177,16 +174,16 @@ export default function AboutPreview() {
             transition={{ duration: 0.7, delay: 0.08, ease: "easeOut" }}
           >
             <p className="text-base leading-8 text-white/72">
-              I’m interested in building digital experiences that feel refined,
-              modern, and visually convincing — not only in how they look, but
-              in how they communicate, respond, and support real product goals.
+              I like building digital products that feel modern, clear, and well
+              put together. Not just in how they look, but in how they speak,
+              respond, and support real goals.
             </p>
 
             <p className="mt-6 text-base leading-8 text-white/72">
-              My approach combines frontend discipline with stronger visual
-              sensitivity: clearer hierarchy, more intentional spacing, better
-              responsiveness, and the kind of detail that makes a website feel
-              more credible and more premium.
+              My approach mixes clean frontend work with a strong eye for detail
+              — better hierarchy, better spacing, smoother responsiveness, and
+              the small things that make a website feel more solid and more
+              premium.
             </p>
 
             <motion.div

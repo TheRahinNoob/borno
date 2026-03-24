@@ -5,16 +5,16 @@ import Container from "@/components/layout/Container";
 
 const featuredProject = {
   eyebrow: "Featured Project",
-  category: "E-commerce / Frontend Engineering",
-  title: "Premium commerce experiences built for clarity, conversion, and trust.",
+  category: "E-commerce / Web Development",
+  title: "A smoother online store built for clarity, trust, and better shopping.",
   description:
-    "A modern storefront direction focused on elevated product presentation, smoother mobile shopping, stronger visual hierarchy, and frontend implementation that feels high-value across the full customer journey.",
+    "This project focused on making the shopping experience feel cleaner and easier from start to finish — better product presentation, stronger mobile flow, clearer layout, and a frontend that feels polished all the way through.",
   stack: [
     "Next.js",
-    "TypeScript",
     "Tailwind CSS",
     "WooCommerce",
     "Responsive UI",
+    "API Integration",
   ],
 };
 
@@ -22,18 +22,18 @@ const secondaryProjects = [
   {
     eyebrow: "Selected Project 02",
     category: "Dashboard / Product Interface",
-    title: "Administrative interfaces designed with cleaner product thinking.",
+    title: "A cleaner dashboard built to feel simple, calm, and easy to use.",
     description:
-      "A more structured dashboard direction built around usability, responsive clarity, and calmer information hierarchy.",
+      "A more structured dashboard experience with clearer layout, better usability, and a smoother way to read and manage information.",
     stack: ["React", "TypeScript", "REST API"],
   },
   {
     eyebrow: "Selected Project 03",
     category: "Brand / Marketing Experience",
-    title: "Landing pages shaped through stronger motion and visual storytelling.",
+    title: "Landing pages built with stronger motion, mood, and story.",
     description:
-      "A modern brand presentation focused on composition, atmosphere, and premium interaction cues that feel sharper and more intentional.",
-    stack: ["Next.js", "Motion", "UI Direction"],
+      "A modern brand experience shaped with better flow, clearer visuals, and small interaction details that make the whole page feel more alive.",
+    stack: ["Next.js", "Motion", "UI Design"],
   },
 ];
 
@@ -68,18 +68,18 @@ export default function FeaturedProjects() {
               </div>
 
               <h2 className="mt-6 text-[2.25rem] font-semibold leading-[0.92] tracking-[-0.075em] text-white xs:text-[2.55rem]">
-                Work shaped with
-                <span className="block text-white/72">stronger hierarchy,</span>
-                <span className="block">clearer product thinking,</span>
+                Work built with
+                <span className="block text-white/72">clearer structure,</span>
+                <span className="block">better product thinking,</span>
                 <span className="block bg-gradient-to-r from-white via-cyan-100 to-white/78 bg-clip-text text-transparent">
-                  and case-study presence.
+                  and real case-study depth.
                 </span>
               </h2>
 
               <p className="mt-5 max-w-[34ch] text-[14px] leading-7 text-white/64">
-                These projects represent the kind of digital work I want to be
-                trusted with — premium interfaces, thoughtful decisions, and
-                implementation that feels polished enough to carry a real brand.
+                These projects show the kind of work I want to keep building —
+                modern products with clear decisions, strong execution, and a
+                polished feel that can carry a real brand.
               </p>
             </div>
           </div>
@@ -87,13 +87,13 @@ export default function FeaturedProjects() {
           <div className="hidden lg:block">
             <p className="section-eyebrow">Selected Work</p>
             <h2 className="mt-6 text-[1.9rem] leading-[0.98] tracking-[-0.05em] font-semibold text-white sm:text-[2.7rem] lg:text-[4.1rem]">
-              Work presented with stronger art direction, clearer hierarchy, and
-              a more serious case-study feel.
+              Work shown with clearer direction, better structure, and a more
+              serious case-study feel.
             </h2>
             <p className="section-copy mt-6 max-w-2xl">
-              These projects represent the kind of digital work I want to be
-              trusted with — premium interfaces, thoughtful product decisions, and
-              implementation that feels polished enough to carry a real brand.
+              These projects show the kind of work I want to keep building —
+              modern products with clear decisions, strong execution, and a
+              polished feel that can carry a real brand.
             </p>
           </div>
         </motion.div>
@@ -122,7 +122,7 @@ export default function FeaturedProjects() {
                         </div>
 
                         <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-[10px] uppercase tracking-[0.18em] text-white/42">
-                          Flagship Case
+                          Main Project
                         </span>
                       </div>
 
@@ -132,7 +132,7 @@ export default function FeaturedProjects() {
                             Storefront Direction
                           </p>
                           <p className="mt-2 text-[12px] leading-6 text-white/56">
-                            Premium product presentation system
+                            Better product browsing and shopping flow
                           </p>
                         </div>
 
@@ -178,7 +178,7 @@ export default function FeaturedProjects() {
                               Focus
                             </p>
                             <p className="mt-2 text-[13px] leading-6 text-white/74">
-                              Clarity, conversion, trust.
+                              Clarity, trust, ease.
                             </p>
                           </div>
 
@@ -187,7 +187,7 @@ export default function FeaturedProjects() {
                               Outcome
                             </p>
                             <p className="mt-2 text-[13px] leading-6 text-white/74">
-                              Higher-value shopping feel.
+                              A smoother shopping feel.
                             </p>
                           </div>
                         </div>
@@ -227,11 +227,11 @@ export default function FeaturedProjects() {
                         href="#"
                         className="inline-flex items-center text-sm font-medium text-white/84 transition hover:text-white"
                       >
-                        View Case Study →
+                        View Project →
                       </a>
 
                       <span className="text-[11px] uppercase tracking-[0.16em] text-white/32">
-                        Flagship
+                        Main
                       </span>
                     </div>
                   </div>
@@ -320,11 +320,11 @@ export default function FeaturedProjects() {
                         href="#"
                         className="inline-flex items-center text-sm font-medium text-white/82 transition hover:text-white"
                       >
-                        View Case Study →
+                        View Project →
                       </a>
 
                       <span className="text-xs text-white/40 sm:text-sm">
-                        More refined project storytelling
+                        Clearer story, stronger presentation
                       </span>
                     </div>
                   </div>
@@ -394,7 +394,7 @@ export default function FeaturedProjects() {
                       href="#"
                       className="inline-flex items-center text-sm font-medium text-white/82 transition hover:text-white"
                     >
-                      View Case Study →
+                      View Project →
                     </a>
 
                     <span className="text-[10px] uppercase tracking-[0.16em] text-white/30">
@@ -489,7 +489,7 @@ export default function FeaturedProjects() {
                     href="#"
                     className="mt-7 inline-flex items-center text-sm font-medium text-white/82 transition hover:text-white sm:mt-8"
                   >
-                    View Case Study →
+                    View Project →
                   </a>
                 </div>
               </motion.article>

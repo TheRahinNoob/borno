@@ -6,27 +6,27 @@ import Container from "@/components/layout/Container";
 const journeyItems = [
   {
     step: "Step 01",
-    title: "Foundation in Modern Frontend",
+    title: "Started with Python Basics",
     description:
-      "Built a strong base in responsive layouts, component thinking, and modern UI development with a focus on clean structure and visual polish.",
+      "I first started with Python basics, which helped me build my programming foundation and understand how code, logic, and problem-solving work together.",
   },
   {
     step: "Step 02",
-    title: "Real-World Product Building",
+    title: "Learned HTML, CSS, and JavaScript in 2021",
     description:
-      "Moved beyond simple pages into practical website experiences involving e-commerce flows, dynamic content, and production-style implementation.",
+      "In 2021, I moved into the core building blocks of the web by learning HTML, CSS, and JavaScript, and started understanding how websites are structured, styled, and made interactive.",
   },
   {
     step: "Step 03",
-    title: "Sharper Product Thinking",
+    title: "Entered Modern Web Development in 2023",
     description:
-      "Developed a stronger focus on usability, business context, responsive behavior, and the details that make digital products feel complete.",
+      "In 2023, I fully stepped into modern web development and started working with modern frameworks, sharpening my skills and building strong proficiency in real web development work.",
   },
   {
     step: "Step 04",
-    title: "Agency-Ready Direction",
+    title: "Real Projects, Freelancing, and Agency Goals",
     description:
-      "Now focused on building premium web experiences that combine design sensitivity, frontend execution, and real-world development discipline.",
+      "By 2025, I had completed many real-world projects. In 2026, I am still working as a freelancer while also looking for the right opportunity to get hired by an agency.",
   },
 ];
 
@@ -74,18 +74,18 @@ export default function Journey() {
               </div>
 
               <h2 className="mt-6 text-[2.2rem] font-semibold leading-[0.9] tracking-[-0.08em] text-white xs:text-[2.45rem]">
-                A progression shaped
-                <span className="block text-white/72">by stronger taste,</span>
-                <span className="block">better execution,</span>
+                My journey through
+                <span className="block text-white/72">code, web skills,</span>
+                <span className="block">real projects,</span>
                 <span className="block bg-gradient-to-r from-white via-cyan-100 to-white/76 bg-clip-text text-transparent">
-                  and more serious thinking.
+                  and where I’m headed.
                 </span>
               </h2>
 
               <p className="mt-5 max-w-[34ch] text-[14px] leading-7 text-white/64">
-                My growth has been about becoming more intentional — not only in
-                how digital work looks, but in how it behaves, communicates, and
-                earns trust through execution quality.
+                My path has grown step by step — from programming basics to
+                modern web development, then into real freelance work and bigger
+                long-term goals.
               </p>
             </div>
           </div>
@@ -93,13 +93,13 @@ export default function Journey() {
           <div className="hidden lg:block">
             <p className="section-eyebrow">Journey</p>
             <h2 className="mt-6 text-[2.15rem] leading-[1] tracking-[-0.05em] font-semibold text-white sm:text-[3rem] lg:text-[4rem]">
-              A progression shaped by stronger taste, better implementation, and
-              more serious product thinking.
+              A journey built through learning, real work, and steady growth in
+              web development.
             </h2>
             <p className="section-copy mt-6 max-w-2xl">
-              My growth has been about becoming more intentional — not only in how
-              digital work looks, but in how it behaves, communicates, and earns
-              trust through execution quality.
+              My path has grown step by step — from programming basics to modern
+              web development, then into real freelance work and bigger
+              long-term goals.
             </p>
           </div>
         </motion.div>
@@ -147,7 +147,7 @@ export default function Journey() {
                       Focus
                     </p>
                     <p className="mt-2 text-[13px] leading-6 text-white/72">
-                      Structure, responsiveness, visual discipline.
+                      Logic, coding basics, problem-solving.
                     </p>
                   </div>
 
@@ -156,7 +156,7 @@ export default function Journey() {
                       Shift
                     </p>
                     <p className="mt-2 text-[13px] leading-6 text-white/74">
-                      From basics into quality-oriented frontend craft.
+                      From first programming steps into web learning.
                     </p>
                   </div>
                 </div>
@@ -251,15 +251,15 @@ export default function Journey() {
 
                 <div className="mt-6 flex items-center gap-3">
                   <span className="text-[10px] uppercase tracking-[0.2em] text-white/32">
-                    Taste
+                    Projects
                   </span>
                   <span className="h-px flex-1 bg-gradient-to-r from-white/10 via-white/6 to-transparent" />
                   <span className="text-[10px] uppercase tracking-[0.2em] text-white/32">
-                    Execution
+                    Freelance
                   </span>
                   <span className="h-px flex-1 bg-gradient-to-r from-white/10 via-white/6 to-transparent" />
                   <span className="text-[10px] uppercase tracking-[0.2em] text-white/32">
-                    Trust
+                    Agency Goal
                   </span>
                 </div>
               </div>

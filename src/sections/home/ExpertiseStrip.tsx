@@ -1,16 +1,35 @@
 import Container from "@/components/layout/Container";
 
 const items = [
-  "Next.js",
+  "JavaScript",
   "TypeScript",
+  "HTML5",
+  "CSS3",
   "React",
+  "Next.js",
+  "Vite",
+  "Node.js",
+  "Express.js",
+  "Django",
+  "Flask",
+  "Python",
+  "C",
+  "C++",
   "Tailwind CSS",
   "Motion",
+  "REST API",
+  "API Integration",
+  "JWT Auth",
+  "Responsive UI",
   "WordPress",
   "WooCommerce",
-  "API Integration",
-  "Responsive UI",
   "E-commerce",
+  "Git",
+  "GitHub",
+  "Vercel",
+  "Deployment",
+  "Arduino",
+  "Robotics",
 ];
 
 export default function ExpertiseStrip() {

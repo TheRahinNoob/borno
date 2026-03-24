@@ -60,48 +60,48 @@ export default function SignatureStatement() {
                     <div className="flex items-start gap-3">
                       <span className="mt-3 h-2.5 w-2.5 shrink-0 rounded-full bg-cyan-300 shadow-[0_0_16px_rgba(103,232,249,0.65)]" />
                       <p className="text-[2.15rem] font-semibold leading-[0.9] tracking-[-0.085em] text-white xs:text-[2.35rem]">
-                        Premium digital
+                        Modern digital
                       </p>
                     </div>
 
                     <p className="pl-5 text-[2.15rem] font-semibold leading-[0.9] tracking-[-0.085em] text-white/92 xs:text-[2.35rem]">
-                      experiences where
+                      products where
                     </p>
 
                     <p className="pl-11 text-[2.15rem] font-semibold leading-[0.9] tracking-[-0.085em] text-white/68 xs:text-[2.35rem]">
-                      interface,
+                      design,
                     </p>
 
                     <p className="pl-3 text-[2.15rem] font-semibold leading-[0.9] tracking-[-0.085em] text-white/68 xs:text-[2.35rem]">
-                      responsiveness,
+                      performance,
                     </p>
 
                     <p className="bg-gradient-to-r from-white via-cyan-100 to-white/74 bg-clip-text pl-9 text-[2.15rem] font-semibold leading-[0.9] tracking-[-0.085em] text-transparent xs:text-[2.35rem]">
-                      and product thinking
+                      and clear thinking
                     </p>
 
                     <p className="pl-1 text-[2.15rem] font-semibold leading-[0.9] tracking-[-0.085em] text-white xs:text-[2.35rem]">
-                      move as one.
+                      work together.
                     </p>
                   </div>
 
                   <div className="mt-9 ml-5 max-w-[20rem]">
                     <div className="mb-5 h-px w-16 bg-gradient-to-r from-cyan-300/65 to-transparent" />
                     <p className="text-[14px] leading-8 text-white/64">
-                      I care about how a product looks, how it behaves, and how
-                      it makes a brand feel. The goal is not only to build usable
-                      websites, but to create experiences that feel more
-                      intentional, more refined, and more trusted.
+                      I care about how a product looks, how it works, and how it
+                      feels to use. I do not just build websites that function. I
+                      try to build products that feel clear, smooth, thoughtful,
+                      and easy to trust.
                     </p>
                   </div>
 
                   <div className="mt-8 ml-5 flex flex-wrap items-center gap-x-3 gap-y-2">
                     <span className="text-[11px] uppercase tracking-[0.22em] text-white/34">
-                      Refined
+                      Clean
                     </span>
                     <span className="h-1 w-1 rounded-full bg-white/20" />
                     <span className="text-[11px] uppercase tracking-[0.22em] text-white/34">
-                      Responsive
+                      Smooth
                     </span>
                     <span className="h-1 w-1 rounded-full bg-white/20" />
                     <span className="text-[11px] uppercase tracking-[0.22em] text-white/34">
@@ -117,15 +117,14 @@ export default function SignatureStatement() {
             <p className="section-eyebrow text-center">Signature Statement</p>
 
             <h2 className="mt-6 text-center text-[2.15rem] leading-[1.02] tracking-[-0.055em] font-semibold text-white sm:text-[3.1rem] lg:text-[4.2rem]">
-              Crafting premium digital experiences where interface,
-              responsiveness, and product thinking move as one system.
+              Building modern digital products where design, performance, and
+              clear thinking work together.
             </h2>
 
             <p className="section-copy mx-auto mt-8 max-w-2xl text-center">
-              I care about how a product looks, how it behaves, and how it makes
-              a brand feel. The goal is not only to build usable websites, but to
-              create experiences that feel more intentional, more refined, and
-              more trusted.
+              I care about how a product looks, how it works, and how it feels
+              to use. I do not just build websites that function. I try to build
+              products that feel clear, smooth, thoughtful, and easy to trust.
             </p>
           </div>
         </div>

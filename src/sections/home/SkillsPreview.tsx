@@ -7,26 +7,26 @@ const skillGroups = [
   {
     title: "Frontend Systems",
     description:
-      "Building refined interfaces with stronger hierarchy, responsiveness, and modern implementation quality.",
+      "My main strength is modern web development on the frontend side — building clean, responsive interfaces with strong structure, smooth interaction, and solid implementation quality.",
     items: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Motion"],
   },
   {
     title: "Backend / API",
     description:
-      "Working with integrations and application logic that support real product behavior and cleaner data flow.",
-    items: ["REST API", "Node.js", "Django", "Authentication", "Data Handling"],
+      "I also work on the backend side of web products — building logic, APIs, integrations, and application flow that help products run properly and scale in a clean way.",
+    items: ["Node.js", "Express", "Django", "Flask", "REST API"],
   },
   {
     title: "CMS / Commerce",
     description:
-      "Creating modern content and shopping experiences with stronger product presentation and user flow clarity.",
-    items: ["WordPress", "WooCommerce", "Product Flows", "Checkout UX"],
+      "I build content-driven and e-commerce experiences with better product flow, clearer structure, and smoother customer journeys across modern web projects.",
+    items: ["WordPress", "WooCommerce", "API Integration", "Product Flows", "Checkout UX"],
   },
   {
-    title: "Implementation & Delivery",
+    title: "Broader Technical Range",
     description:
-      "Focusing on responsiveness, debugging, polish, and the details that make digital work feel production-ready.",
-    items: ["Responsive UI", "Performance", "Debugging", "Deployment"],
+      "Web development is my core area. I also have hands-on interest in robotics and some exposure to ethical hacking as a learning area — not as my main expert field.",
+    items: ["Responsive UI", "Debugging", "Deployment", "C / C++", "Arduino / Robotics", "Ethical Hacking"],
   },
 ];
 
@@ -66,19 +66,18 @@ export default function SkillsPreview() {
               </div>
 
               <h2 className="mt-6 text-[2.2rem] font-semibold leading-[0.9] tracking-[-0.08em] text-white xs:text-[2.45rem]">
-                Capability shaped
-                <span className="block text-white/72">as systems,</span>
-                <span className="block">not just scattered</span>
+                Skills shaped
+                <span className="block text-white/72">around real web work,</span>
+                <span className="block">with a broader</span>
                 <span className="block bg-gradient-to-r from-white via-cyan-100 to-white/76 bg-clip-text text-transparent">
-                  tools and labels.
+                  technical range too.
                 </span>
               </h2>
 
               <p className="mt-5 max-w-[34ch] text-[14px] leading-7 text-white/64">
-                My skill set is centered around modern frontend quality,
-                product thinking, and implementation discipline — with a focus
-                on making digital experiences feel more credible, more usable,
-                and more professionally complete.
+                My strongest area is web development — from frontend systems to
+                backend logic and e-commerce builds. I also explore robotics and
+                ethical hacking as side technical areas.
               </p>
             </div>
           </div>
@@ -86,13 +85,13 @@ export default function SkillsPreview() {
           <div className="hidden lg:block">
             <p className="section-eyebrow">Skills / Expertise</p>
             <h2 className="mt-6 text-[2.15rem] leading-[1] tracking-[-0.05em] font-semibold text-white sm:text-[3rem] lg:text-[4rem]">
-              Capability presented as systems, not just a list of tools.
+              Strong in web development, with a broader technical range beyond it.
             </h2>
             <p className="section-copy mt-6 max-w-2xl">
-              My skill set is centered around modern frontend quality, product
-              thinking, and implementation discipline — with a focus on making
-              digital experiences feel more credible, more usable, and more
-              professionally complete.
+              My strongest area is web development — from frontend systems to
+              backend logic and e-commerce builds. I also explore robotics and
+              ethical hacking as side technical areas, while keeping web work as
+              my main expert focus.
             </p>
           </div>
         </motion.div>
@@ -236,7 +235,7 @@ export default function SkillsPreview() {
 
                     <div className="text-right">
                       <p className="text-[10px] uppercase tracking-[0.18em] text-white/30">
-                        Delivery
+                        Broader Range
                       </p>
                     </div>
                   </div>

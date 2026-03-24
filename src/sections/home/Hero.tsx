@@ -2,11 +2,11 @@ import Container from "@/components/layout/Container";
 
 const stackItems = [
   "Next.js",
-  "TypeScript",
-  "Tailwind",
-  "Motion",
-  "WordPress",
-  "WooCommerce",
+  "React",
+  "Node.js",
+  "Express",
+  "Django",
+  "Flask",
 ];
 
 export default function Hero() {
@@ -33,7 +33,7 @@ export default function Hero() {
               <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3 py-2 backdrop-blur-xl">
                 <span className="h-2 w-2 rounded-full bg-cyan-300 shadow-[0_0_14px_rgba(103,232,249,0.7)]" />
                 <span className="text-[10px] font-medium uppercase tracking-[0.24em] text-white/62">
-                  Frontend Developer
+                  Full-Stack Developer
                 </span>
               </div>
 
@@ -44,17 +44,16 @@ export default function Hero() {
 
                 <h1 className="mt-4 text-[2.45rem] font-semibold leading-[0.9] tracking-[-0.075em] text-white xs:text-[2.7rem]">
                   Mobile-first
-                  <span className="block text-white/70">premium web</span>
-                  <span className="block">experiences with</span>
+                  <span className="block text-white/70">websites that feel</span>
+                  <span className="block">clean, smooth,</span>
                   <span className="block bg-gradient-to-r from-white via-cyan-100 to-white/72 bg-clip-text text-transparent">
-                    sharp visual taste.
+                    and premium.
                   </span>
                 </h1>
 
                 <p className="mt-5 max-w-[33ch] text-[14px] leading-7 text-white/64">
-                  I build refined websites with stronger hierarchy, cleaner
-                  responsiveness, and a more convincing premium feel for
-                  modern client-facing work.
+                  I build modern websites that look polished, work smoothly,
+                  and feel clear and easy to use from the first scroll.
                 </p>
               </div>
 
@@ -63,14 +62,14 @@ export default function Hero() {
                   href="#work"
                   className="inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 py-3.5 text-sm font-medium text-black transition hover:scale-[1.01]"
                 >
-                  View Selected Work
+                  See My Work
                 </a>
 
                 <a
                   href="#about"
                   className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] px-6 py-3.5 text-sm font-medium text-white/90 backdrop-blur-xl transition hover:border-white/18 hover:bg-white/[0.06]"
                 >
-                  About My Approach
+                  About Me
                 </a>
               </div>
 
@@ -100,17 +99,17 @@ export default function Hero() {
                         </div>
 
                         <p className="mt-5 text-[1.15rem] font-medium leading-6 tracking-[-0.04em] text-white">
-                          Clean structure.
+                          Clean work.
                           <span className="block text-white/68">
-                            Stronger polish.
+                            Real polish.
                           </span>
                         </p>
 
                         <div className="mt-6 h-px w-full bg-gradient-to-r from-white/12 via-white/5 to-transparent" />
 
                         <p className="mt-4 text-[12px] leading-6 text-white/58">
-                          Interfaces shaped with detail, spacing, clarity, and
-                          visual control.
+                          Built with care, good spacing, clear structure, and
+                          strong visual balance.
                         </p>
                       </div>
 
@@ -120,8 +119,8 @@ export default function Hero() {
                             Positioning
                           </p>
                           <p className="mt-3 text-[13px] leading-6 text-white/72">
-                            Modern developer with design sensitivity and
-                            client-ready standards.
+                            Full-stack developer building clean, client-ready
+                            digital products.
                           </p>
                         </div>
 
@@ -130,8 +129,8 @@ export default function Hero() {
                             Build Focus
                           </p>
                           <p className="mt-3 text-[13px] leading-6 text-white/74">
-                            High-value web experiences that feel composed and
-                            intentional.
+                            Websites and products that feel smooth, thoughtful,
+                            and ready for real business use.
                           </p>
                         </div>
                       </div>
@@ -144,7 +143,7 @@ export default function Hero() {
                             Core Stack
                           </p>
                           <p className="mt-2 text-[13px] leading-6 text-white/58">
-                            Built for premium modern web delivery.
+                            Tools I use to build modern web products.
                           </p>
                         </div>
 
@@ -173,22 +172,21 @@ export default function Hero() {
           <div className="hidden lg:block">
             <div className="max-w-5xl">
               <p className="section-eyebrow">
-                Tamjid Borno • Frontend Developer • Premium Digital Experiences
+                Tamjid Borno • Full-Stack Developer • Modern Web Products
               </p>
 
               <h1 className="mt-6 max-w-5xl text-[2.35rem] leading-[0.94] tracking-[-0.065em] font-semibold text-white sm:mt-8 sm:text-[4.4rem] lg:text-[5.7rem]">
-                I build digital experiences
-                <span className="block text-white/72">with strong taste,</span>
-                <span className="block">modern precision,</span>
+                I build digital products
+                <span className="block text-white/72">that feel clean,</span>
+                <span className="block">modern, smooth,</span>
                 <span className="block bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
-                  and agency-level polish.
+                  and ready for real work.
                 </span>
               </h1>
 
               <p className="mt-6 max-w-xl text-[15px] leading-7 text-white/68 sm:mt-8 sm:max-w-2xl sm:text-base sm:leading-8">
-                I focus on crafting websites that feel refined, intentional, and
-                genuinely premium — combining frontend discipline, responsive
-                product thinking, and a stronger sense of visual direction.
+                I build websites and web apps that feel polished, easy to use,
+                and made with care from both the frontend and backend side.
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:gap-4">
@@ -196,14 +194,14 @@ export default function Hero() {
                   href="#work"
                   className="inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 py-3.5 text-sm font-medium text-black transition hover:scale-[1.02]"
                 >
-                  View Selected Work
+                  See My Work
                 </a>
 
                 <a
                   href="#about"
                   className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] px-6 py-3.5 text-sm font-medium text-white/90 backdrop-blur-xl transition hover:border-white/20 hover:bg-white/[0.05]"
                 >
-                  About My Approach
+                  About Me
                 </a>
               </div>
             </div>
@@ -231,8 +229,8 @@ export default function Hero() {
                         Visual Standard
                       </p>
                       <p className="mt-3 text-[15px] leading-7 text-white/82 sm:mt-4 sm:text-lg sm:leading-8">
-                        Premium interfaces shaped through composition, clarity,
-                        spacing, and modern frontend detail.
+                        Clean modern interfaces shaped with clarity, spacing,
+                        balance, and strong frontend care.
                       </p>
                     </div>
 
@@ -241,8 +239,8 @@ export default function Hero() {
                         Frontend Craft
                       </p>
                       <p className="mt-3 text-sm leading-7 text-white/70">
-                        Thoughtful UI systems with stronger hierarchy, cleaner
-                        responsiveness, and more refined interaction quality.
+                        Smooth, thoughtful interfaces with better structure,
+                        responsive behavior, and clear user flow.
                       </p>
                     </div>
 
@@ -251,8 +249,8 @@ export default function Hero() {
                         Product Thinking
                       </p>
                       <p className="mt-3 text-sm leading-7 text-white/70">
-                        Digital experiences designed to feel credible, usable,
-                        and ready for serious client-facing work.
+                        Work made to feel useful, believable, and ready for real
+                        clients and real users.
                       </p>
                     </div>
                   </div>
@@ -265,8 +263,8 @@ export default function Hero() {
                     Positioning
                   </p>
                   <p className="mt-4 text-[15px] leading-7 text-white/78 sm:text-base sm:leading-8">
-                    A developer focused on building modern web experiences that
-                    feel high-value, intentional, and visually convincing.
+                    A full-stack developer building modern web products for
+                    freelance clients and agency-level work.
                   </p>
                 </div>
 

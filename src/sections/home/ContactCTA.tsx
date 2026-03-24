@@ -71,7 +71,7 @@ export default function ContactCTA() {
 
                 <div className="mt-8 grid grid-cols-2 gap-3">
                   <a
-                    href="mailto:your@email.com"
+                    href="mailto:tamjidborno2009@gmail.com"
                     className="group relative overflow-hidden rounded-[1.35rem] border border-white/10 bg-white/[0.06] px-4 py-4"
                   >
                     <div className="absolute inset-[1px] rounded-[calc(1.35rem-1px)] border border-white/[0.04]" />
@@ -129,10 +129,10 @@ export default function ContactCTA() {
                     Direct
                   </p>
                   <a
-                    href="mailto:your@email.com"
+                    href="mailto:tamjidborno2009@gmail.com"
                     className="mt-3 block text-[13px] leading-6 text-white/78 transition hover:text-white"
                   >
-                    your@email.com
+                    tamjidborno2009@gmail.com
                   </a>
                 </div>
               </div>
@@ -176,7 +176,7 @@ export default function ContactCTA() {
 
                 <div className="mt-8 flex flex-col gap-4 sm:mt-10 sm:flex-row">
                   <a
-                    href="mailto:your@email.com"
+                    href="mailto:tamjidborno2009@gmail.com"
                     className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3.5 text-sm font-medium text-black transition hover:scale-[1.02]"
                   >
                     Email Me
@@ -223,10 +223,10 @@ export default function ContactCTA() {
                     Direct Contact
                   </p>
                   <a
-                    href="mailto:your@email.com"
+                    href="mailto:tamjidborno2009@gmail.com"
                     className="mt-4 inline-flex text-base leading-8 text-white/80 transition hover:text-white sm:text-lg"
                   >
-                    your@email.com
+                    tamjidborno2009@gmail.com
                   </a>
                 </div>
               </div>
