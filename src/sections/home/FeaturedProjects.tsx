@@ -21,26 +21,57 @@ const featuredProject = {
   liveUrl: "https://creatorfloww.vercel.app",
 };
 
-const secondaryProjects = [
+type SecondaryProject = {
+  eyebrow: string;
+  category: string;
+  title: string;
+  description: string;
+  stack: string[];
+  href: string;
+  imageMobile?: string;
+  imageDesktop?: string;
+  previewLabel?: string;
+  highlights?: string[];
+};
+
+const secondaryProjects: SecondaryProject[] = [
   {
     eyebrow: "Selected Project 02",
-    category: "Dashboard / Product Interface",
-    title: "A cleaner dashboard built to feel simple and easy to use.",
+    category: "Marketing Agency Site",
+    title: "RAH Media — a clean marketing agency website.",
     description:
-      "A more structured dashboard experience with clearer layout, calmer presentation, and smoother information flow.",
-    stack: ["React", "TypeScript", "REST API"],
-    href: "#",
+      "A marketing agency website built to explain services clearly and bring in more enquiries.",
+    stack: ["HTML", "CSS", "Vanilla JS", "Responsive"],
+    href: "https://raju-s8fc.onrender.com/",
+    imageMobile: "/projects/rah-media-cover-mobile.png",
+    imageDesktop: "/projects/rah-media-cover-desktop.png",
+    previewLabel: "RAH MEDIA",
+    highlights: [
+      "Clear service sections",
+      "Stronger first impression",
+      "Responsive enquiry flow",
+    ],
   },
   {
     eyebrow: "Selected Project 03",
-    category: "Brand / Marketing Experience",
-    title: "Landing pages built with stronger flow, mood, and motion.",
+    category: "Brand Website",
+    title: "Landing pages with better flow and motion.",
     description:
-      "A modern brand experience shaped with clearer visuals and small interaction details that make the page feel more alive.",
+      "A modern brand page shaped with cleaner visuals and smoother interaction.",
     stack: ["Next.js", "Motion", "UI Design"],
     href: "#",
   },
 ];
+
+function BrowserDots() {
+  return (
+    <div className="flex items-center gap-2">
+      <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />
+      <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
+      <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
+    </div>
+  );
+}
 
 export default function FeaturedProjects() {
   const shouldReduceMotion = useReducedMotion();
@@ -122,11 +153,7 @@ export default function FeaturedProjects() {
                   <div className="relative md:grid md:grid-cols-[0.96fr_1.04fr] md:items-start md:gap-5">
                     <div className="overflow-hidden rounded-[1.45rem] border border-white/10 bg-[linear-gradient(180deg,rgba(10,18,34,0.98)_0%,rgba(8,14,27,0.96)_100%)]">
                       <div className="flex items-center justify-between border-b border-white/8 px-4 py-3">
-                        <div className="flex items-center gap-2">
-                          <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />
-                          <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
-                          <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
-                        </div>
+                        <BrowserDots />
 
                         <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-[10px] uppercase tracking-[0.16em] text-white/42">
                           Creatorflow
@@ -219,9 +246,7 @@ export default function FeaturedProjects() {
 
                     <div className="absolute inset-5 overflow-hidden rounded-[1.55rem] border border-white/10 bg-[linear-gradient(180deg,rgba(10,18,34,0.98)_0%,rgba(8,14,27,0.96)_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
                       <div className="absolute left-4 top-4 z-10 flex items-center gap-2">
-                        <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />
-                        <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
-                        <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
+                        <BrowserDots />
                       </div>
 
                       <div className="absolute right-4 top-4 z-10 rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-[10px] uppercase tracking-[0.18em] text-white/42">
@@ -313,7 +338,7 @@ export default function FeaturedProjects() {
             {secondaryProjects.map((project, index) => (
               <motion.article
                 key={project.title}
-                className="relative overflow-hidden rounded-[1.7rem] border border-white/10 bg-[linear-gradient(180deg,rgba(9,14,27,0.92)_0%,rgba(7,11,22,0.98)_100%)] p-4 shadow-[0_16px_42px_rgba(0,0,0,0.22)]"
+                className="overflow-hidden rounded-[1.7rem] border border-white/10 bg-[linear-gradient(180deg,rgba(9,14,27,0.92)_0%,rgba(7,11,22,0.98)_100%)] shadow-[0_16px_42px_rgba(0,0,0,0.22)]"
                 initial={shouldReduceMotion ? undefined : { opacity: 0, y: 24 }}
                 whileInView={
                   shouldReduceMotion ? undefined : { opacity: 1, y: 0 }
@@ -325,34 +350,65 @@ export default function FeaturedProjects() {
                   ease: "easeOut",
                 }}
               >
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(96,165,250,0.10),transparent_24%),radial-gradient(circle_at_bottom_left,rgba(139,92,246,0.08),transparent_22%)]" />
-                <div className="absolute inset-[1px] rounded-[calc(1.7rem-1px)] border border-white/[0.04]" />
-
-                <div className="relative">
-                  <div className="flex items-start justify-between gap-4">
-                    <div>
-                      <p className="text-[10px] uppercase tracking-[0.28em] text-blue-200/72">
-                        {project.eyebrow}
-                      </p>
-                      <p className="mt-2 text-[11px] uppercase tracking-[0.18em] text-white/38">
-                        {project.category}
-                      </p>
+                {project.imageMobile ? (
+                  <div className="relative overflow-hidden border-b border-white/8 bg-[#060c17]">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(96,165,250,0.12),transparent_32%),radial-gradient(circle_at_bottom_left,rgba(139,92,246,0.10),transparent_30%)]" />
+                    <div className="relative flex items-center justify-between px-4 py-3">
+                      <BrowserDots />
+                      <span className="rounded-full border border-white/10 bg-white/[0.05] px-3 py-1 text-[10px] uppercase tracking-[0.18em] text-white/42">
+                        {project.previewLabel}
+                      </span>
                     </div>
 
-                    <div className="mt-1 h-10 w-10 rounded-full border border-white/10 bg-white/[0.03]">
-                      <div className="flex h-full items-center justify-center">
-                        <span className="h-2.5 w-2.5 rounded-full bg-cyan-300/75" />
-                      </div>
+                    <div className="relative aspect-[10/12] overflow-hidden bg-[#040912]">
+                      <Image
+                        src={project.imageMobile}
+                        alt={project.title}
+                        fill
+                        sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw"
+                        className="object-cover object-top"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#050912]/30 via-transparent to-transparent" />
                     </div>
                   </div>
+                ) : (
+                  <div className="relative min-h-[148px] border-b border-white/8 bg-gradient-to-br from-[#08101f] via-[#0b1324] to-[#101827]">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(96,165,250,0.12),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(139,92,246,0.10),transparent_30%)]" />
+                    <div className="absolute inset-4 rounded-[1.15rem] border border-white/10 bg-white/[0.03]" />
+                    <div className="absolute left-7 top-7">
+                      <BrowserDots />
+                    </div>
+                  </div>
+                )}
 
-                  <h3 className="mt-5 max-w-[18ch] text-[1.25rem] font-semibold leading-[1.04] tracking-[-0.045em] text-white md:max-w-[16ch] md:text-[1.15rem]">
+                <div className="relative p-5">
+                  <p className="text-[10px] uppercase tracking-[0.28em] text-blue-200/72">
+                    {project.eyebrow}
+                  </p>
+                  <p className="mt-3 text-[11px] uppercase tracking-[0.18em] text-white/38">
+                    {project.category}
+                  </p>
+
+                  <h3 className="mt-4 max-w-[18ch] text-[1.28rem] font-semibold leading-[1.03] tracking-[-0.045em] text-white">
                     {project.title}
                   </h3>
 
-                  <p className="mt-4 text-[14px] leading-7 text-white/64 md:text-[13px] md:leading-6">
+                  <p className="mt-4 text-[14px] leading-7 text-white/64">
                     {project.description}
                   </p>
+
+                  {project.highlights?.length ? (
+                    <ul className="mt-5 space-y-2.5">
+                      {project.highlights.map((item) => (
+                        <li key={item} className="flex items-start gap-3">
+                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-200/80" />
+                          <span className="text-[12.5px] leading-5 text-white/68">
+                            {item}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
 
                   <div className="mt-5 flex flex-wrap gap-2">
                     {project.stack.map((item) => (
@@ -398,41 +454,61 @@ export default function FeaturedProjects() {
                   ease: "easeOut",
                 }}
               >
-                <div className="relative min-h-[210px] border-b border-white/8 bg-gradient-to-br from-[#08101f] via-[#0b1324] to-[#101827]">
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(96,165,250,0.12),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(139,92,246,0.10),transparent_30%)]" />
-
-                  <div className="absolute inset-4 rounded-[1.2rem] border border-white/10 bg-white/[0.03] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
-                    <div className="absolute left-4 top-4 flex items-center gap-2">
-                      <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />
-                      <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
-                      <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
+                {project.imageDesktop ? (
+                  <div className="relative overflow-hidden border-b border-white/8 bg-[#060c17]">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(96,165,250,0.12),transparent_32%),radial-gradient(circle_at_bottom_left,rgba(139,92,246,0.10),transparent_30%)]" />
+                    <div className="relative flex items-center justify-between px-5 py-4">
+                      <BrowserDots />
+                      <span className="rounded-full border border-white/10 bg-white/[0.05] px-3 py-1 text-[10px] uppercase tracking-[0.18em] text-white/42">
+                        {project.previewLabel}
+                      </span>
                     </div>
 
-                    <div className="absolute left-1/2 top-1/2 grid w-[84%] -translate-x-1/2 -translate-y-1/2 gap-2.5">
-                      <div className="flex h-10 items-center justify-between rounded-xl border border-white/10 bg-white/[0.04] px-3">
-                        <div className="h-2 w-12 rounded-full bg-white/14" />
-                        <div className="h-2 w-10 rounded-full bg-white/12" />
+                    <div className="relative aspect-[16/10] overflow-hidden bg-[#040912]">
+                      <Image
+                        src={project.imageDesktop}
+                        alt={project.title}
+                        fill
+                        sizes="(min-width: 1024px) 48vw, 100vw"
+                        className="object-cover object-top"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#050912]/32 via-transparent to-transparent" />
+                    </div>
+                  </div>
+                ) : (
+                  <div className="relative min-h-[210px] border-b border-white/8 bg-gradient-to-br from-[#08101f] via-[#0b1324] to-[#101827]">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(96,165,250,0.12),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(139,92,246,0.10),transparent_30%)]" />
+                    <div className="absolute inset-4 rounded-[1.2rem] border border-white/10 bg-white/[0.03] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
+                      <div className="absolute left-4 top-4">
+                        <BrowserDots />
                       </div>
 
-                      <div
-                        className={`grid gap-2.5 ${
-                          index === 0
-                            ? "grid-cols-[0.9fr_1.1fr]"
-                            : "grid-cols-2"
-                        }`}
-                      >
-                        <div className="h-20 rounded-[1rem] border border-white/10 bg-white/[0.04]" />
-                        <div className="h-20 rounded-[1rem] border border-white/10 bg-white/[0.04]" />
-                      </div>
+                      <div className="absolute left-1/2 top-1/2 grid w-[84%] -translate-x-1/2 -translate-y-1/2 gap-2.5">
+                        <div className="flex h-10 items-center justify-between rounded-xl border border-white/10 bg-white/[0.04] px-3">
+                          <div className="h-2 w-12 rounded-full bg-white/14" />
+                          <div className="h-2 w-10 rounded-full bg-white/12" />
+                        </div>
 
-                      <div className="grid grid-cols-3 gap-2.5">
-                        <div className="h-12 rounded-[0.9rem] border border-white/10 bg-white/[0.04]" />
-                        <div className="h-12 rounded-[0.9rem] border border-white/10 bg-white/[0.04]" />
-                        <div className="h-12 rounded-[0.9rem] border border-white/10 bg-white/[0.04]" />
+                        <div
+                          className={`grid gap-2.5 ${
+                            index === 0
+                              ? "grid-cols-[0.9fr_1.1fr]"
+                              : "grid-cols-2"
+                          }`}
+                        >
+                          <div className="h-20 rounded-[1rem] border border-white/10 bg-white/[0.04]" />
+                          <div className="h-20 rounded-[1rem] border border-white/10 bg-white/[0.04]" />
+                        </div>
+
+                        <div className="grid grid-cols-3 gap-2.5">
+                          <div className="h-12 rounded-[0.9rem] border border-white/10 bg-white/[0.04]" />
+                          <div className="h-12 rounded-[0.9rem] border border-white/10 bg-white/[0.04]" />
+                          <div className="h-12 rounded-[0.9rem] border border-white/10 bg-white/[0.04]" />
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                )}
 
                 <div className="p-6 lg:p-7">
                   <p className="text-[10px] uppercase tracking-[0.28em] text-blue-200/72">
@@ -449,6 +525,19 @@ export default function FeaturedProjects() {
                   <p className="mt-4 text-[14px] leading-7 text-white/66">
                     {project.description}
                   </p>
+
+                  {project.highlights?.length ? (
+                    <ul className="mt-5 space-y-2.5">
+                      {project.highlights.map((item) => (
+                        <li key={item} className="flex items-start gap-3">
+                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-200/80" />
+                          <span className="text-[13px] leading-6 text-white/68">
+                            {item}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
 
                   <div className="mt-6 flex flex-wrap gap-2">
                     {project.stack.map((item) => (
